@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Advanced Auto Logout</title>
+	<link href="../css/popup.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body  style="background:#FFFFFF">
+<p>
+<img src="../icons/icon32.png" style="float: left;" alt="Advanced Auto Logout">
+<h2 style ="padding-top:5px;"> &nbsp;Advanced Auto Logout</h2>
+</p>
+
+	<div style="padding-left: 10px;padding-right: 10px; padding-bottom: 82px;" class="gradientBoxesWithOuterShadows">
+	
+	
+			<div align="center">
+			<h2><strong>URL:</strong></h2> <input class="inputs" type="text" id="NameOfWebsites" value=""></br>
+			</div>
+			<div>
+			<div align="center" class="divBox">
+			<strong><h2>Enter Time in Minutes:</h2></strong> <input class="inputs" type="number" id="TimeInMins" min="0" step="10" value="0">
+			</br></br>
+				<a href="#" id="LogoutSpecific" class="myButtonGreen">Start Log Out Timer</a>
+			</div>
+			</div>
+			</br>
+			<div align="center">
+				<a href="#" id="AddToLogOutList" class="myButton">Add to Log out List</a>
+				<a href="#" id="RemoveToLogOutList" class="myButtonRed">Remove from Log out List</a>
+				<a href="#" id="LogoutAll" class="myButtonRed">Log out All</a>
+			</div>
+		</div>
+	
+	<script src="/js/background_popup.js"></script>
+</body>
+</html>

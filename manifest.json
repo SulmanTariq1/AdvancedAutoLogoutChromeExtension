@@ -1,0 +1,36 @@
+{
+	"manifest_version": 2,
+
+	"name": "Advanced Auto Logout",
+	"description": "Logout from all the websites on single click",
+	"author": "Sulman Tariq",
+	
+	"homepage_url": "http://safetyredirector.com/",
+	"version": "0.1",
+
+	"permissions": [ "tabs", "http://*/*", "https://*/*", "webNavigation", "webRequest", "webRequestBlocking", "storage","cookies","alarms","tabs" ],
+
+	"background": {
+		"page": "pages/background.html"
+	},
+
+	"browser_action": {
+		"default_icon" : "icons/refresh.png",
+		"default_title" : "Advanced Auto Logout",
+		"default_popup": "pages/popup.html"
+	},
+
+	"icons": {
+		"16" : "icons/button.png",
+		"48" : "icons/icon48.png",
+		"128" : "icons/icon128.png"
+	},
+
+	"web_accessible_resources": [
+		"/icons/icon128.png"
+	],
+
+	"options_page": "pages/options.html",
+
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
